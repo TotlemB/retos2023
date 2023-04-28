@@ -1,0 +1,29 @@
+function paresNumerosCercanos (arregloF,numero){
+
+    let paresCercanos = [arregloF[0],arregloF[1]];
+    let paresCercanos2 = [arregloF[0],arregloF[1]];
+    let numeroCerca = arregloF[0]+arregloF[1];
+    let valorAnterior = 0;
+
+    for (i = 0;i<arregloF.length;i++){
+        for (u = 0;u<arregloF.length;u++){
+            if (i != u){
+                valor = arregloF[i] + arregloF[u];
+                
+                if(Math.abs(valor-numero) > Math.abs(numeroCerca-numero) && Math.abs(valor-numero) < Math.abs(valorAnterior-numero)){
+                    paresCercanos2 = [arregloF[i],arregloF[u]];  
+                    numeroCerca = valor
+                    valorAnterior = arregloF[i] + arregloF[u];
+                }
+                else if (Math.abs(valor-numero) < Math.abs(numeroCerca-numero)){
+                    paresCercanos = [arregloF[i],arregloF[u]];  
+                    numeroCerca = valor                              
+                }
+            }  
+        }  
+    }
+    return [paresCercanos,paresCercanos2];   
+}
+
+valores = paresNumerosCercanos([1,2,3,4,5,6,7,8],6)
+console.log(valores[0],valores[1]);
