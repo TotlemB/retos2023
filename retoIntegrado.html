@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encontrar el par de números más cercano a X</title>
+</head>
+<body>
+	<h1>Ingrese un arreglo de números y un número X</h1>
+	<form id ="reto1">
+		<label for="array">Arreglo:</label>
+		<input type="text" id="array" name="array"><br>
+
+		<label for="numero">Número X:</label>
+		<input type="text" id="numero" name="numero"><br>
+
+		<input type="submit" value="Encontrar">
+	</form>
+    <p><i>Par 1:  </i><span id="par1"></span></p>
+    <p><i>Par 2:  </i><span id="par2"></span></p>
+
+    <h1>Ingrese los texto para saber si son anagramas</h1>
+    <form id ="reto2">
+		<label for="texto1">Texto 1:</label>
+		<input type="text" id="texto1" name="texto1"><br>
+
+		<label for="texto2">Texto 2:</label>
+		<input type="text" id="texto2" name="texto2"><br>
+
+		<input type="submit" value="Encontrar">
+	</form>
+    <p><i>Resultado:  </i><span id="anagrama"></span></p>
+    <h1>reto3</h1>
+    <form id ="reto3">
+		<label for="arreglo3">Arreglo:</label>
+		<input type="text" id="arreglo3" name="arreglo3"><br>
+
+		<input type="submit" value="Encontrar">
+	</form>
+    <p><i>Arreglo invertido:  </i><span id="arregloI"></span></p>
+
+    <h1>reto4</h1>
+    <label for="texto"><b>Texto a analizar: </b></label>
+    <input type="texto" id="texto" name="texto" required>
+    <button onclick="analizarTexto()">Analizar</button>
+    <br>
+    <p><i>Número de palabras:  </i><span id="numPalabras"></span></p>
+    <p><i>Primera palabra:  </i><span id="primeraPalabra"></span></p>
+    <p><i>Última palabra:  </i><span id="ultimaPalabra"></span></p>
+    <p><i>Oración invertida:  </i><span id="oracionInvertida"></span></p>
+
+    <h1>Reto 5</h1>
+    <h2>Registro de Usuario</h2>
+    <form id="registro">
+      <label for="nombre">Nombre: </label>
+      <br>
+      <input type="text" id="nombre" name="nombre" required>
+      <br>
+      <label for="correo">Correo Electrónico:</label>
+      <br>
+      <input type="email" id="correo" name="correo" required>
+      <br>
+      <label for="contrasena">Contraseña:</label>
+      <br>
+      <input type="password" id="contrasena" name="contrasena" required>
+      <br>
+      <br>
+      <input type="submit" value="Registrarse">
+    </form>
+	<script src="retosIntegrados.js"></script>
+</body>
+</html>
